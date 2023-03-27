@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #d7ebfd;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.area-form {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.area-titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.area-titulo a {
+    text-decoration: none;
+    color: #e08141;
+}
+
+fieldset {
+    border: none;
+}
+
+.area-nome-e-sobrenome, .area-email-e-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.area-nome-e-sobrenome, .area-email-e-senha {
+    margin-bottom: 10px;
+}
+
+
+.area-termos {
+    font-size: 0.8em;
+}
+
+.area-termos a {
+    text-decoration: none;
+    color: #000;
+}
+
+.area-termos a:hover {
+    text-decoration: underline;
+}
+
+.termos {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 2.3em;
+    border-radius: 4px;
+    outline: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    background-color: #e08141;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: #db6d24;
+}
+
+.entrada {
+    width: 100%;
+    height: 2.3em;
+    border-radius: 7px;
+    border: 2px solid #a9a9a9;
+    outline: 0;
+    padding-left: 5px;
+}
+
+.area-redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border: 2px solid #e08141;
+}
+
+.image img {
+    width: 25px;
+}
+.entrada {
+    margin-top: 5px;
+}
+
+.copy {
+    margin-top: 70px;
+    font-size: 0.8em;
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area-form {
+        margin-top: 0;
+        width: 80%;
+    }
+    
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+
+    .area-nome-e-sobrenome {
+        flex-direction: row;
+    }
+
+    .n-s {
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .area-form {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .area-form {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .area-form {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .area-form {
+        width: 30%;
+    }
+}
